@@ -15,7 +15,6 @@ public class Robot{
 	public void setTarea(Tarea tarea){
 		busy = true;
 		this.tarea = tarea;
-		System.out.println("asignada");
 		timer.schedule(new TimerTask() {
 			@Override
 			public void run() {
