@@ -3,3 +3,6 @@
 Se crea un queue de tareas y despues se crean n robots, a los cuales se les agrega una tarea siempre y cuando no esten ocupados, al estos tener una tarea asignada espera t segundos para llamar al metodo de la tarea el cual guarda en el log lo que realizo.
 
 antes de lo anterior se lee el csv para definir cuantas tareas (num)  se realizaron de las que estan en el queue, se restan las primeras num tareas del queue para seguir
+
+
+// De puro coraje arreglé el error por el que no hacía nada, en el while cambiando la condicion del if de cada worker a false hace que ya corra todas las tareas

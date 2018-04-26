@@ -25,9 +25,9 @@ public class McPatito{
 			workers[i] = new Robot(i);
 		}
 
-		while(queue.size() != 0){
+		while(!queue.isEmpty()){
 			for (Robot r: workers) {
-				if (r.busy){
+				if (!r.busy && !queue.isEmpty()){
 					r.setTarea(queue.get(0));
 					queue.remove(0);
 				}
